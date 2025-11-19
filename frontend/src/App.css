@@ -65,10 +65,20 @@ select {
   background: white;
   border-radius: 10px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.input-section textarea,
+.output-section .documentation {
+  flex: 1;
 }
 
 textarea {
   width: 100%;
+  min-height: 400px;
+  max-height: 600px;
   padding: 15px;
   font-family: 'Courier New', monospace;
   font-size: 14px;
@@ -79,9 +89,11 @@ textarea {
 
 .documentation {
   min-height: 400px;
+  max-height: 600px;
+  height: 100%;
   padding: 15px;
-  background: #1e1e1e;  /* Dark background */
-  color: #d4d4d4;  /* Light text */
+  background: #1e1e1e;
+  color: #d4d4d4;
   border: 1px solid #333;
   border-radius: 5px;
   overflow-y: auto;
